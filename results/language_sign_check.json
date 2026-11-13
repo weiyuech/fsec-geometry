@@ -1,0 +1,27 @@
+{
+  "n_pairs": 132,
+  "n_shared_anchors": 30,
+  "fraction_of_smallest_half_axis_maximum": {
+    "0.35": {
+      "median_p_difference": 0.6516484875412732,
+      "positive_pairs": 130
+    },
+    "0.5": {
+      "median_p_difference": 0.7168558597149932,
+      "positive_pairs": 132
+    },
+    "0.65": {
+      "median_p_difference": 0.745035987853137,
+      "positive_pairs": 132
+    }
+  },
+  "anchor_bootstrap_draws": 250,
+  "median_difference_anchor_bootstrap_95": [
+    0.4194521441237583,
+    1.1549078450472643
+  ],
+  "positive_pair_count_anchor_bootstrap_95": [
+    116.675,
+    132.0
+  ]
+}

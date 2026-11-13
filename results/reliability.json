@@ -1,0 +1,161 @@
+{
+ "A_replication": {
+  "n": 318,
+  "median_p": 2.301253890420451,
+  "mean_p": 2.4225155205759044,
+  "frac_p_le_2": 0.12264150943396226,
+  "median_delta": -0.07974851021267197,
+  "frac_delta_neg": 0.8962264150943396,
+  "spearman_p_vs_delta": -0.9989543837795892
+ },
+ "B_split_half": {
+  "spearman_half": 0.5404188323616355,
+  "pearson_half": 0.6751893582889431,
+  "spearman_brown_full": 0.7016518118427734,
+  "median_abs_diff_between_halves": 0.22816309793784756,
+  "n_splits": 60,
+  "anchors_per_half": 15
+ },
+ "C_bootstrap": {
+  "median_se": 0.1851405722230717,
+  "sd_between_pairs": 0.5447998560971937,
+  "reliability_ratio": 0.7504738988013147,
+  "frac_pairs_ci_excludes_2_above": 0.46226415094339623,
+  "frac_pairs_ci_excludes_2_below": 0.0031446540880503146,
+  "frac_pairs_ci_contains_2": 0.5345911949685535
+ },
+ "E_per_anchor": {
+  "frac_anchor_fits_finite": 1.0,
+  "median_over_all": 2.2779007390002883,
+  "frac_anchor_fits_gt2": 0.7343815513626835,
+  "median_pair_frac_gt2": 0.7666666666666667,
+  "median_within_pair_sd": 0.5265562321672344,
+  "anchor_main_effect_sd": 0.21308679473783507
+ },
+ "F_additive": {
+  "r2_direction_main_effects": 0.4635509994602539,
+  "n_dirs": 33,
+  "lowest": [
+   [
+    "Certainty",
+    -0.514
+   ],
+   [
+    "Health",
+    -0.499
+   ],
+   [
+    "Wealth",
+    -0.422
+   ],
+   [
+    "Sentiment",
+    -0.338
+   ]
+  ],
+  "highest": [
+   [
+    "Arabic",
+    0.559
+   ],
+   [
+    "Russian",
+    0.604
+   ],
+   [
+    "Japanese",
+    0.663
+   ],
+   [
+    "Chinese",
+    0.674
+   ]
+  ]
+ },
+ "D_alternate_forms": {
+  "anchors: wikipedia-en": {
+   "n": 318,
+   "spearman": 0.40877978042432545,
+   "median_other": 2.1533583855536254,
+   "frac_same_side_of_2": 0.779874213836478
+  },
+  "anchors: wikipedia-zh": {
+   "n": 318,
+   "spearman": 0.18497238278285796,
+   "median_other": 2.215202087922827,
+   "frac_same_side_of_2": 0.7075471698113207
+  },
+  "anchors: code": {
+   "n": 318,
+   "spearman": 0.25300124880609626,
+   "median_other": 2.1065676985121815,
+   "frac_same_side_of_2": 0.6540880503144654
+  },
+  "additive perturbation": {
+   "n": 318,
+   "spearman": 0.5842888139775231,
+   "median_other": 2.2590979596502088,
+   "frac_same_side_of_2": 0.7578616352201258
+  },
+  "measure layer -7": {
+   "n": 318,
+   "spearman": 0.8765225013662608,
+   "median_other": 2.2067584426005844,
+   "frac_same_side_of_2": 0.9276729559748428
+  },
+  "measure layer -12": {
+   "n": 318,
+   "spearman": 0.8598650363959901,
+   "median_other": 2.217744671168152,
+   "frac_same_side_of_2": 0.9182389937106918
+  },
+  "perturb layer 5": {
+   "n": 318,
+   "spearman": 0.7903763378765895,
+   "median_other": 2.380543103902779,
+   "frac_same_side_of_2": 0.8836477987421384
+  },
+  "perturb layer 10": {
+   "n": 318,
+   "spearman": 0.6066908243071814,
+   "median_other": 2.383351708487836,
+   "frac_same_side_of_2": 0.8207547169811321
+  },
+  "perturb layer 20": {
+   "n": 318,
+   "spearman": 0.4889283907753663,
+   "median_other": 2.3094870905978073,
+   "frac_same_side_of_2": 0.7830188679245284
+  },
+  "model qwen": {
+   "n": 317,
+   "spearman": 0.38952285088515676,
+   "median_other": 2.220945274470331,
+   "frac_same_side_of_2": 0.7476340694006309
+  },
+  "model llama": {
+   "n": 318,
+   "spearman": 0.4067560913581984,
+   "median_other": 2.501511343628753,
+   "frac_same_side_of_2": 0.8490566037735849
+  },
+  "model mistral": {
+   "n": 318,
+   "spearman": 0.2607844099442506,
+   "median_other": 2.342697460837546,
+   "frac_same_side_of_2": 0.8113207547169812
+  },
+  "model aya": {
+   "n": 318,
+   "spearman": 0.41076167469506125,
+   "median_other": 2.356913535209105,
+   "frac_same_side_of_2": 0.8364779874213837
+  },
+  "model yi": {
+   "n": 296,
+   "spearman": 0.07075935720003516,
+   "median_other": 2.1949381379203627,
+   "frac_same_side_of_2": 0.6824324324324325
+  }
+ }
+}

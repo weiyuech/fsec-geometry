@@ -1,0 +1,7 @@
+{"defaults": {"dtype": "bfloat16", "perturb_layer": 2, "batch": 4096, "signed": true, "n_anchors": 30, "step_deg": 6.0},
+ "jobs": [
+  {"name": "smoke_pythia70m", "model": "pythia-70m", "exp": "grid", "family": "contrastive", "limit": 3},
+  {"name": "smoke_gemma2b", "model": "gemma2b", "exp": "grid", "family": "contrastive", "limit": 3},
+  {"name": "smoke_gemma9b", "model": "gemma9b", "exp": "grid", "family": "contrastive", "limit": 3},
+  {"name": "smoke_toy", "exp": "toy", "ds": [4096], "seeds": [0], "anchor_noises": [0.0, 0.1732], "amaxes": [25.0], "thetas_deg": [0], "ks": [2, 4], "n_anchors": 16, "n_sets": 8, "n_steps": 21}
+ ]}

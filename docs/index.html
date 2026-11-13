@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Explore a measured activation-response boundary in Gemma-2-9B by mixing the French and tense directions in all four sign combinations.">
+  <meta name="theme-color" content="#f8f8f5">
+  <title>French × tense · FSEC geometry</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="contour-data.js"></script>
+  <script defer src="explorer.js"></script>
+</head>
+<body>
+  <a class="skip" href="#controls">Skip to experiment controls</a>
+  <main>
+    <header>
+      <a class="back" href="https://github.com/weiyuech/fsec-geometry">
+        <span aria-hidden="true">←</span> FSEC geometry
+      </a>
+      <h1>French <span>×</span> tense</h1>
+      <p class="intro">An activation is the list of numbers a layer passes on for one token. Push that list toward French, future tense, or a mix of both. How far does the push travel before a later activation changes by a fixed amount?</p>
+    </header>
+    <noscript>This explorer needs JavaScript. <a href="https://github.com/weiyuech/fsec-geometry/blob/main/figures/french-tense-boundary.png">View the measured boundary as a figure.</a></noscript>
+    <div id="load-error" role="alert" hidden></div>
+    <div class="experiment">
+      <figure class="plot">
+        <div class="plot-top">
+          <h2>Equal-response boundary</h2>
+          <span class="meta">Gemma-2-9B · 30 starting texts</span>
+        </div>
+        <svg id="graph" viewBox="0 0 480 395" role="img" aria-labelledby="graph-title graph-desc">
+          <title id="graph-title">French and tense activation-response boundary</title>
+          <desc id="graph-desc">One arrow travels from the unperturbed center to the measured boundary. French increases rightward and future tense upward.</desc>
+        </svg>
+        <figcaption>
+          <span><i class="swatch measured"></i>Measured boundary</span>
+          <span><i class="swatch arrow"></i>Selected push</span>
+          <label class="circle-toggle">
+            <input type="checkbox" id="circle" checked>
+            <i class="swatch comparison"></i> Circle (p = 2)
+          </label>
+        </figcaption>
+      </figure>
+      <section class="workbench" aria-label="Experiment and measurements">
+        <section id="controls" aria-labelledby="early-title">
+          <div class="section-title"><span class="layer">Layer 2</span><h2 id="early-title">Choose the push</h2></div>
+          <fieldset class="sign-field">
+            <legend>French direction</legend>
+            <div class="segmented">
+              <label><input type="radio" name="french" value="-1"><span>← Reverse French</span></label>
+              <label><input type="radio" name="french" value="1" checked><span>Toward French →</span></label>
+            </div>
+          </fieldset>
+          <fieldset class="sign-field">
+            <legend>Tense direction</legend>
+            <div class="segmented">
+              <label><input type="radio" name="tense" value="-1"><span>↓ Past</span></label>
+              <label><input type="radio" name="tense" value="1" checked><span>Future ↑</span></label>
+            </div>
+          </fieldset>
+          <div class="angle-control">
+            <div class="slider-heading">
+              <label for="mix">Mixing angle</label>
+              <output id="angle" for="mix">45°</output>
+            </div>
+            <input type="range" id="mix" min="0" max="90" step="1" value="45" aria-describedby="mix-description">
+            <div class="slider-ends" aria-hidden="true"><span>French only</span><span>Tense only</span></div>
+            <p id="mix-description" class="sr-only">Zero degrees is a pure French-axis push. At 45 degrees the two displayed components have equal magnitudes. At 90 degrees the push is pure tense.</p>
+          </div>
+        </section>
+        <section class="readout" aria-labelledby="later-title">
+          <div class="section-title"><h2 id="later-title">Push needed at layer 2</h2></div>
+          <p id="distance"><strong id="distance-number">—</strong> <span>axis units</span></p>
+          <p class="dynamic-note" id="components"></p>
+          <p class="response-note">Every boundary point reaches the same change at layer 40.</p>
+        </section>
+      </section>
+    </div>
+    <div class="under-plot">
+      <details id="comparison">
+        <summary>Compare all four sign choices at <span id="comparison-angle">45°</span></summary>
+        <table aria-label="Measured push distance at the same mixing angle in four sign combinations">
+          <thead><tr><th scope="col">French</th><th scope="col">Tense</th><th scope="col">Distance (axis units)</th></tr></thead>
+          <tbody id="comparison-rows"></tbody>
+        </table>
+      </details>
+      <details>
+        <summary>How to read the measurement</summary>
+        <div class="methods">
+          <p><strong>The push.</strong> French comes from matched English and French prompts. Tense comes from matched past and future prompts. We combine their directions and rotate the activation at the last token of a separate five-token text.</p>
+          <p><strong>The boundary.</strong> We measure the Euclidean distance between the original and perturbed layer-40 activations. The solid line marks a distance of <span id="threshold-value"></span> on the median response grid for 30 texts. The same threshold applies in every quadrant.</p>
+          <p><strong>The units.</strong> Each half-axis is scaled so its measured intercept is one. A 45° line mixes equal fractions of those intercepts. In these coordinates, the dashed circle reaches one unit in every direction.</p>
+          <p><strong>The signs.</strong> The original two-direction sweep sampled the shaded upper-right quadrant. The other three quarters come from reversing one or both directions in this run.</p>
+        </div>
+      </details>
+    </div>
+    <footer>
+      <a href="https://github.com/weiyuech/fsec-geometry/blob/main/examples/Tense__French.npz">Measured grid</a>
+      <a href="https://github.com/weiyuech/fsec-geometry#reversing-the-arrows">Results across 132 language pairs <span aria-hidden="true">↗</span></a>
+    </footer>
+    <span id="accessible-result" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></span>
+  </main>
+</body>
+</html>

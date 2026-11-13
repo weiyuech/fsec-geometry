@@ -1,0 +1,1361 @@
+{
+ "n_anchors": 300,
+ "unique_token_sequences": 299,
+ "methods": {
+  "p": "Fit the positive-quadrant contour of the anchor-median response grid, using each sample\u2019s paper threshold.",
+  "bootstrap": "200 resamples of the 300 anchor indices, shared across all pairs. CIs for family medians condition on the selected pairs. Pair intervals are pointwise, with no multiplicity adjustment.",
+  "split": "20 seeded draws of disjoint equal-sized anchor subsets; median Pearson and Spearman across draws for absolute and rank association over the same pairs. The median absolute error between halves is in exponent units.",
+  "target": "Spearman\u2013Brown extrapolation for Pearson reliability of the fitted aggregate, using 9 * n * (1-r) / r at each subset size n. This assumes similarly distributed independent anchors and inverse-n error variance. Nonlinearity of median-grid fits makes values approximate. Pooling families inflates between-pair dispersion.",
+  "crossed": "Method-of-moments variance components for single-anchor p using all pairs and anchors with finite fits for all pairs in each stratum. Negative estimates are retained. Residual includes pair-by-anchor interaction. This is a different estimand from p fitted on an anchor-median grid."
+ },
+ "all": {
+  "n": 90,
+  "median_p": 2.203948458856183,
+  "above_2": 78,
+  "median_p_anchor_ci": [
+   2.1639620796708923,
+   2.2504462930244746
+  ],
+  "pair_cis_above_2": 66,
+  "pair_cis_below_2": 4,
+  "split": {
+   "15": {
+    "pearson": 0.72932559153148,
+    "spearman": 0.5918673087212414,
+    "median_absolute_difference": 0.2087764952377008,
+    "n_for_pearson_0_90": 50.102513291106646
+   },
+   "30": {
+    "pearson": 0.881637579480029,
+    "spearman": 0.7482569864592337,
+    "median_absolute_difference": 0.14414155332404377,
+    "n_for_pearson_0_90": 36.24828873474318
+   },
+   "75": {
+    "pearson": 0.9444685352366655,
+    "spearman": 0.8413219739062434,
+    "median_absolute_difference": 0.09716675915810297,
+    "n_for_pearson_0_90": 39.68765217346078
+   },
+   "150": {
+    "pearson": 0.9716313126484031,
+    "spearman": 0.9266987693953985,
+    "median_absolute_difference": 0.06236572414006669,
+    "n_for_pearson_0_90": 39.41590542226005
+   }
+  },
+  "crossed_single_anchor_variances": {
+   "complete_anchors": 300,
+   "complete_pairs": 90,
+   "pair": 0.13514633281670005,
+   "anchor": 0.04609120365658084,
+   "interaction_plus_residual": 0.3449875706816943
+  }
+ },
+ "families": {
+  "code-sem": {
+   "n": 30,
+   "median_p": 2.2276842205244747,
+   "above_2": 28,
+   "median_p_anchor_ci": [
+    2.171987880346918,
+    2.2826756591518045
+   ],
+   "pair_cis_above_2": 25,
+   "pair_cis_below_2": 0,
+   "split": {
+    "15": {
+     "pearson": 0.21729828285036307,
+     "spearman": 0.2240266963292547,
+     "median_absolute_difference": 0.22064758195018852,
+     "n_for_pearson_0_90": 486.2658389618491
+    },
+    "30": {
+     "pearson": 0.5244311740760703,
+     "spearman": 0.46941045606229137,
+     "median_absolute_difference": 0.14824827586630596,
+     "n_for_pearson_0_90": 244.8435359047433
+    },
+    "75": {
+     "pearson": 0.6013565140380486,
+     "spearman": 0.5993325917686319,
+     "median_absolute_difference": 0.10042320214260908,
+     "n_for_pearson_0_90": 447.46227361443687
+    },
+    "150": {
+     "pearson": 0.8048563183933461,
+     "spearman": 0.7828698553948832,
+     "median_absolute_difference": 0.05867038546112846,
+     "n_for_pearson_0_90": 327.31801210788706
+    }
+   },
+   "crossed_single_anchor_variances": {
+    "complete_anchors": 300,
+    "complete_pairs": 30,
+    "pair": 0.008415024210384378,
+    "anchor": 0.05405787529798139,
+    "interaction_plus_residual": 0.2021125277156416
+   }
+  },
+  "lang-sem": {
+   "n": 30,
+   "median_p": 2.493540314847899,
+   "above_2": 26,
+   "median_p_anchor_ci": [
+    2.412221454099258,
+    2.585076367377322
+   ],
+   "pair_cis_above_2": 24,
+   "pair_cis_below_2": 1,
+   "split": {
+    "15": {
+     "pearson": 0.7329877693317015,
+     "spearman": 0.7401557285873193,
+     "median_absolute_difference": 0.2512444728090891,
+     "n_for_pearson_0_90": 49.177697975896216
+    },
+    "30": {
+     "pearson": 0.8980984535446652,
+     "spearman": 0.903448275862069,
+     "median_absolute_difference": 0.19767035601336735,
+     "n_for_pearson_0_90": 30.635190868382967
+    },
+    "75": {
+     "pearson": 0.953190663160609,
+     "spearman": 0.9506117908787541,
+     "median_absolute_difference": 0.12608686761832755,
+     "n_for_pearson_0_90": 33.1479352324133
+    },
+    "150": {
+     "pearson": 0.9766651251149325,
+     "spearman": 0.9726362625139043,
+     "median_absolute_difference": 0.0840801128213195,
+     "n_for_pearson_0_90": 32.25474145105157
+    }
+   },
+   "crossed_single_anchor_variances": {
+    "complete_anchors": 300,
+    "complete_pairs": 30,
+    "pair": 0.23457386983811954,
+    "anchor": 0.18790727313003985,
+    "interaction_plus_residual": 0.5221941767148648
+   }
+  },
+  "sem-sem": {
+   "n": 30,
+   "median_p": 2.0825445008793517,
+   "above_2": 24,
+   "median_p_anchor_ci": [
+    2.050687892602256,
+    2.1236384788731084
+   ],
+   "pair_cis_above_2": 17,
+   "pair_cis_below_2": 3,
+   "split": {
+    "15": {
+     "pearson": 0.4224539876765663,
+     "spearman": 0.3692992213570634,
+     "median_absolute_difference": 0.18721869755758486,
+     "n_for_pearson_0_90": 184.56142902681498
+    },
+    "30": {
+     "pearson": 0.5912116631294435,
+     "spearman": 0.5517241379310345,
+     "median_absolute_difference": 0.12165566124496663,
+     "n_for_pearson_0_90": 186.6892313504386
+    },
+    "75": {
+     "pearson": 0.7451017235708713,
+     "spearman": 0.6767519466073415,
+     "median_absolute_difference": 0.07838677851369613,
+     "n_for_pearson_0_90": 230.9165730621162
+    },
+    "150": {
+     "pearson": 0.8628450958729783,
+     "spearman": 0.8347052280311458,
+     "median_absolute_difference": 0.05653402280215597,
+     "n_for_pearson_0_90": 214.5913808366097
+    }
+   },
+   "crossed_single_anchor_variances": {
+    "complete_anchors": 300,
+    "complete_pairs": 30,
+    "pair": 0.01931776119673613,
+    "anchor": 0.008725427279830755,
+    "interaction_plus_residual": 0.19823904287646713
+   }
+  }
+ },
+ "rows": [
+  {
+   "pair": [
+    "Age",
+    "Lisp"
+   ],
+   "family": "code-sem",
+   "p": 2.0434803308801524,
+   "anchor_ci": [
+    1.9634983541723385,
+    2.1289991950380602
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Age",
+    "TypeScript"
+   ],
+   "family": "code-sem",
+   "p": 2.144800992214324,
+   "anchor_ci": [
+    2.0730720159282865,
+    2.2495483776209473
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Certainty",
+    "Cpp"
+   ],
+   "family": "code-sem",
+   "p": 2.200024702781524,
+   "anchor_ci": [
+    2.1114583669928213,
+    2.296179591649906
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Certainty",
+    "Go"
+   ],
+   "family": "code-sem",
+   "p": 2.1913006570014297,
+   "anchor_ci": [
+    2.101696263552107,
+    2.316672733599185
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Certainty",
+    "Haskell"
+   ],
+   "family": "code-sem",
+   "p": 2.1767509409206576,
+   "anchor_ci": [
+    2.1019892266573392,
+    2.2759631525145245
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Certainty",
+    "Java"
+   ],
+   "family": "code-sem",
+   "p": 2.197303479344495,
+   "anchor_ci": [
+    2.0969472692790796,
+    2.3104164911257885
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Certainty",
+    "Python"
+   ],
+   "family": "code-sem",
+   "p": 2.147387693024074,
+   "anchor_ci": [
+    2.050745083243621,
+    2.2540178653938714
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Gender",
+    "Java"
+   ],
+   "family": "code-sem",
+   "p": 2.1531002542716897,
+   "anchor_ci": [
+    2.0894190743875645,
+    2.2465498010309606
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Gender",
+    "JavaScript"
+   ],
+   "family": "code-sem",
+   "p": 2.182070448082793,
+   "anchor_ci": [
+    2.1072665809491684,
+    2.2752866366427105
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Health",
+    "Cpp"
+   ],
+   "family": "code-sem",
+   "p": 2.241410227422346,
+   "anchor_ci": [
+    2.158740928759564,
+    2.2963936917173027
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Health",
+    "Python"
+   ],
+   "family": "code-sem",
+   "p": 2.145718872315249,
+   "anchor_ci": [
+    2.059851340737453,
+    2.2075780518430173
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Health",
+    "TypeScript"
+   ],
+   "family": "code-sem",
+   "p": 2.228945212341237,
+   "anchor_ci": [
+    2.16031998957335,
+    2.3072702060838566
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Honesty",
+    "Rust"
+   ],
+   "family": "code-sem",
+   "p": 2.297872191327317,
+   "anchor_ci": [
+    2.2442630802259185,
+    2.4453514427051632
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Person",
+    "Lisp"
+   ],
+   "family": "code-sem",
+   "p": 2.356967421711275,
+   "anchor_ci": [
+    2.2283135941570626,
+    2.450917611431084
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Refusal",
+    "Cpp"
+   ],
+   "family": "code-sem",
+   "p": 2.26600059236665,
+   "anchor_ci": [
+    2.1731806744865443,
+    2.374326385136938
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Refusal",
+    "Haskell"
+   ],
+   "family": "code-sem",
+   "p": 2.2980887434785333,
+   "anchor_ci": [
+    2.222805566735608,
+    2.4255182813838974
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Refusal",
+    "Lisp"
+   ],
+   "family": "code-sem",
+   "p": 2.3820158074227162,
+   "anchor_ci": [
+    2.2721146607532856,
+    2.4995696156108
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Refusal",
+    "Python"
+   ],
+   "family": "code-sem",
+   "p": 2.320780673676941,
+   "anchor_ci": [
+    2.2431687123409807,
+    2.438481081514994
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Sentiment",
+    "Java"
+   ],
+   "family": "code-sem",
+   "p": 2.2264232287077124,
+   "anchor_ci": [
+    2.1463646836873576,
+    2.325565559697936
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Sentiment",
+    "Lisp"
+   ],
+   "family": "code-sem",
+   "p": 2.3503998646474846,
+   "anchor_ci": [
+    2.23688533430679,
+    2.458279721835318
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Status",
+    "Go"
+   ],
+   "family": "code-sem",
+   "p": 2.3135992817811397,
+   "anchor_ci": [
+    2.2252875445742872,
+    2.3857927544397195
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Status",
+    "Rust"
+   ],
+   "family": "code-sem",
+   "p": 2.33747352432008,
+   "anchor_ci": [
+    2.247186617712788,
+    2.434496351941307
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Status",
+    "TypeScript"
+   ],
+   "family": "code-sem",
+   "p": 2.3075805880662026,
+   "anchor_ci": [
+    2.2223658228193774,
+    2.4007611897860386
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Tense",
+    "Go"
+   ],
+   "family": "code-sem",
+   "p": 2.0723005302046946,
+   "anchor_ci": [
+    1.9075646155267711,
+    2.1978906025114067
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Tense",
+    "JavaScript"
+   ],
+   "family": "code-sem",
+   "p": 1.916955090083982,
+   "anchor_ci": [
+    1.7782798925044476,
+    2.0365223784476556
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Tense",
+    "Lisp"
+   ],
+   "family": "code-sem",
+   "p": 1.954259221131297,
+   "anchor_ci": [
+    1.8936361883258235,
+    2.1081893315300495
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Tense",
+    "TypeScript"
+   ],
+   "family": "code-sem",
+   "p": 2.0374180004455655,
+   "anchor_ci": [
+    1.899486208658199,
+    2.1654717239119985
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Wealth",
+    "Go"
+   ],
+   "family": "code-sem",
+   "p": 2.2949878913276325,
+   "anchor_ci": [
+    2.1799431592742295,
+    2.42708874555181
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Wealth",
+    "Lisp"
+   ],
+   "family": "code-sem",
+   "p": 2.3727870840745635,
+   "anchor_ci": [
+    2.2706564695832427,
+    2.5080116750839516
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Wealth",
+    "Python"
+   ],
+   "family": "code-sem",
+   "p": 2.2369513214096215,
+   "anchor_ci": [
+    2.1066690243229784,
+    2.326353561859329
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Certainty",
+    "German"
+   ],
+   "family": "lang-sem",
+   "p": 1.8255017117484875,
+   "anchor_ci": [
+    1.765178530575919,
+    1.9230337622692535
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Certainty",
+    "Italian"
+   ],
+   "family": "lang-sem",
+   "p": 1.9240956466397985,
+   "anchor_ci": [
+    1.8356294101394528,
+    2.027265948827891
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Certainty",
+    "Russian"
+   ],
+   "family": "lang-sem",
+   "p": 2.2187769611307018,
+   "anchor_ci": [
+    2.075963930206126,
+    2.33913446963739
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Era",
+    "Dutch"
+   ],
+   "family": "lang-sem",
+   "p": 3.9136046595189806,
+   "anchor_ci": [
+    3.5676219803927327,
+    4.324164638400335
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Era",
+    "Russian"
+   ],
+   "family": "lang-sem",
+   "p": 4.006230473899285,
+   "anchor_ci": [
+    3.6526350634968012,
+    4.4601691276962665
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Era",
+    "Spanish"
+   ],
+   "family": "lang-sem",
+   "p": 3.9392829063427377,
+   "anchor_ci": [
+    3.569418894250374,
+    4.435931050108829
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Gender",
+    "French"
+   ],
+   "family": "lang-sem",
+   "p": 2.338008322573946,
+   "anchor_ci": [
+    2.2123878807846795,
+    2.4570956154851706
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Health",
+    "Portuguese"
+   ],
+   "family": "lang-sem",
+   "p": 1.9632145382865689,
+   "anchor_ci": [
+    1.8590118007003844,
+    2.0302210615214205
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Health",
+    "Spanish"
+   ],
+   "family": "lang-sem",
+   "p": 1.9357317251174015,
+   "anchor_ci": [
+    1.875198902023047,
+    2.0259251751245277
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Honesty",
+    "French"
+   ],
+   "family": "lang-sem",
+   "p": 2.035288700704887,
+   "anchor_ci": [
+    1.9564153720580446,
+    2.149608546742476
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Honesty",
+    "Portuguese"
+   ],
+   "family": "lang-sem",
+   "p": 2.1626304642457073,
+   "anchor_ci": [
+    2.0672354259050834,
+    2.304526167087699
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Literary",
+    "Chinese"
+   ],
+   "family": "lang-sem",
+   "p": 3.3302328657764027,
+   "anchor_ci": [
+    2.9475605588533798,
+    3.578151186222255
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Literary",
+    "German"
+   ],
+   "family": "lang-sem",
+   "p": 2.4921589176010226,
+   "anchor_ci": [
+    2.3839398979971578,
+    2.6526092673257295
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Literary",
+    "Italian"
+   ],
+   "family": "lang-sem",
+   "p": 2.6035294480403945,
+   "anchor_ci": [
+    2.4421916654622344,
+    2.7596235296139393
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Literary",
+    "Spanish"
+   ],
+   "family": "lang-sem",
+   "p": 2.6970979697429636,
+   "anchor_ci": [
+    2.5626075715776637,
+    2.9431327063845147
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Number",
+    "German"
+   ],
+   "family": "lang-sem",
+   "p": 2.610569381996623,
+   "anchor_ci": [
+    2.457180222827065,
+    2.8558813770156455
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Number",
+    "Russian"
+   ],
+   "family": "lang-sem",
+   "p": 3.0845882328576764,
+   "anchor_ci": [
+    2.813204743823879,
+    3.3474092116538188
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Person",
+    "Arabic"
+   ],
+   "family": "lang-sem",
+   "p": 2.391232735861221,
+   "anchor_ci": [
+    2.241027155776323,
+    2.4866361986836383
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Person",
+    "Japanese"
+   ],
+   "family": "lang-sem",
+   "p": 2.592816735086735,
+   "anchor_ci": [
+    2.424195689316772,
+    2.747606694066366
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Refusal",
+    "Chinese"
+   ],
+   "family": "lang-sem",
+   "p": 2.7432874478142923,
+   "anchor_ci": [
+    2.582847669600524,
+    2.9309394116793546
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Refusal",
+    "Italian"
+   ],
+   "family": "lang-sem",
+   "p": 2.527983646493458,
+   "anchor_ci": [
+    2.3745009730096056,
+    2.6980326880991994
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Refusal",
+    "Japanese"
+   ],
+   "family": "lang-sem",
+   "p": 2.6956438574587076,
+   "anchor_ci": [
+    2.5671122151654484,
+    2.8810259098765645
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Refusal",
+    "Portuguese"
+   ],
+   "family": "lang-sem",
+   "p": 2.4949217120947758,
+   "anchor_ci": [
+    2.4051765176097115,
+    2.705627900356521
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Sentiment",
+    "Italian"
+   ],
+   "family": "lang-sem",
+   "p": 2.1628288064597307,
+   "anchor_ci": [
+    2.0440412843242717,
+    2.269765836498843
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Status",
+    "Italian"
+   ],
+   "family": "lang-sem",
+   "p": 2.0314057708141813,
+   "anchor_ci": [
+    1.946914383125401,
+    2.1288613024681724
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Tense",
+    "Dutch"
+   ],
+   "family": "lang-sem",
+   "p": 3.96971686020004,
+   "anchor_ci": [
+    3.501158224668222,
+    4.592251267113107
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Tense",
+    "Portuguese"
+   ],
+   "family": "lang-sem",
+   "p": 4.4512748542370115,
+   "anchor_ci": [
+    4.021803125138933,
+    4.944692914733111
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Wealth",
+    "Chinese"
+   ],
+   "family": "lang-sem",
+   "p": 2.405683112257643,
+   "anchor_ci": [
+    2.3144922862310455,
+    2.5466675014024
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Wealth",
+    "Italian"
+   ],
+   "family": "lang-sem",
+   "p": 2.1920414676316,
+   "anchor_ci": [
+    2.069913828021474,
+    2.284807713748978
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Wealth",
+    "Japanese"
+   ],
+   "family": "lang-sem",
+   "p": 2.4017299197541453,
+   "anchor_ci": [
+    2.236468865638408,
+    2.5354757292855314
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Age",
+    "Era"
+   ],
+   "family": "sem-sem",
+   "p": 2.0361658320432268,
+   "anchor_ci": [
+    1.9692277155861242,
+    2.152646168281539
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Age",
+    "Status"
+   ],
+   "family": "sem-sem",
+   "p": 1.8152951398660375,
+   "anchor_ci": [
+    1.748901868933582,
+    1.8645077689790737
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Age",
+    "Tense"
+   ],
+   "family": "sem-sem",
+   "p": 2.0018648788671847,
+   "anchor_ci": [
+    1.9242126426685067,
+    2.1215402786600572
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Certainty",
+    "Gender"
+   ],
+   "family": "sem-sem",
+   "p": 2.1015710408798425,
+   "anchor_ci": [
+    2.045712564839425,
+    2.1980633990985146
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Certainty",
+    "Person"
+   ],
+   "family": "sem-sem",
+   "p": 2.0749939516482434,
+   "anchor_ci": [
+    2.0031993572925915,
+    2.1447054346756285
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Certainty",
+    "Status"
+   ],
+   "family": "sem-sem",
+   "p": 1.9567720196638276,
+   "anchor_ci": [
+    1.876448838179273,
+    2.028333093644855
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Era",
+    "Number"
+   ],
+   "family": "sem-sem",
+   "p": 1.825610551375464,
+   "anchor_ci": [
+    1.7430702905886246,
+    1.9370533244089907
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Era",
+    "Person"
+   ],
+   "family": "sem-sem",
+   "p": 2.090653547615921,
+   "anchor_ci": [
+    2.019192736674796,
+    2.186265803033132
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Era",
+    "Status"
+   ],
+   "family": "sem-sem",
+   "p": 2.181390313832798,
+   "anchor_ci": [
+    2.0784032884478667,
+    2.2795267001404493
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Era",
+    "Tense"
+   ],
+   "family": "sem-sem",
+   "p": 1.7475777143804352,
+   "anchor_ci": [
+    1.614701670566555,
+    1.8911430118315185
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Gender",
+    "Honesty"
+   ],
+   "family": "sem-sem",
+   "p": 2.2732179105392842,
+   "anchor_ci": [
+    2.1852285129730626,
+    2.3429282752444136
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Gender",
+    "Literary"
+   ],
+   "family": "sem-sem",
+   "p": 2.2273281160452663,
+   "anchor_ci": [
+    2.1422140981644238,
+    2.3148994102705185
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Gender",
+    "Refusal"
+   ],
+   "family": "sem-sem",
+   "p": 2.207872214930841,
+   "anchor_ci": [
+    2.125569000130536,
+    2.2683522182084617
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Gender",
+    "Sentiment"
+   ],
+   "family": "sem-sem",
+   "p": 2.2105928620658606,
+   "anchor_ci": [
+    2.1170845381740087,
+    2.2853924036253948
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Health",
+    "Era"
+   ],
+   "family": "sem-sem",
+   "p": 2.171046731566975,
+   "anchor_ci": [
+    2.0769183495094623,
+    2.2671159700499857
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Health",
+    "Gender"
+   ],
+   "family": "sem-sem",
+   "p": 2.2340657820543144,
+   "anchor_ci": [
+    2.143291809113233,
+    2.300913946974415
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Health",
+    "Literary"
+   ],
+   "family": "sem-sem",
+   "p": 1.9862697295015013,
+   "anchor_ci": [
+    1.9335581798864696,
+    2.052651756694497
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Health",
+    "Number"
+   ],
+   "family": "sem-sem",
+   "p": 2.0234864598511817,
+   "anchor_ci": [
+    1.8982046262889776,
+    2.1045165273567066
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Health",
+    "Status"
+   ],
+   "family": "sem-sem",
+   "p": 2.0900950501104596,
+   "anchor_ci": [
+    2.007776387954179,
+    2.165581323212244
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Number",
+    "Literary"
+   ],
+   "family": "sem-sem",
+   "p": 2.416679993741118,
+   "anchor_ci": [
+    2.2798844730044743,
+    2.543178928776421
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Number",
+    "Refusal"
+   ],
+   "family": "sem-sem",
+   "p": 2.0199611031596127,
+   "anchor_ci": [
+    1.9263632583820467,
+    2.097052703238814
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Person",
+    "Literary"
+   ],
+   "family": "sem-sem",
+   "p": 2.041867005572579,
+   "anchor_ci": [
+    1.9655555835381742,
+    2.128292074481772
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Person",
+    "Refusal"
+   ],
+   "family": "sem-sem",
+   "p": 2.072593967910513,
+   "anchor_ci": [
+    2.0105738058020624,
+    2.1692904153204466
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Person",
+    "Status"
+   ],
+   "family": "sem-sem",
+   "p": 2.1139934735869335,
+   "anchor_ci": [
+    2.0362613152509246,
+    2.1676141142507594
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Sentiment",
+    "Literary"
+   ],
+   "family": "sem-sem",
+   "p": 2.0046593068254808,
+   "anchor_ci": [
+    1.9258677127712842,
+    2.1048705393872904
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Status",
+    "Literary"
+   ],
+   "family": "sem-sem",
+   "p": 2.210806941423903,
+   "anchor_ci": [
+    2.1325569007413643,
+    2.2927368136347397
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Tense",
+    "Person"
+   ],
+   "family": "sem-sem",
+   "p": 2.2322987310813556,
+   "anchor_ci": [
+    2.1125817215408915,
+    2.3815292726744106
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Wealth",
+    "Age"
+   ],
+   "family": "sem-sem",
+   "p": 2.120632195812808,
+   "anchor_ci": [
+    2.029262184471833,
+    2.224513259658182
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Wealth",
+    "Era"
+   ],
+   "family": "sem-sem",
+   "p": 2.003138656199712,
+   "anchor_ci": [
+    1.9366022342810942,
+    2.113218980204796
+   ],
+   "finite_single_anchor_fits": 300
+  },
+  {
+   "pair": [
+    "Wealth",
+    "Number"
+   ],
+   "family": "sem-sem",
+   "p": 1.96586319487199,
+   "anchor_ci": [
+    1.8861139263946534,
+    2.06637067322914
+   ],
+   "finite_single_anchor_fits": 300
+  }
+ ]
+}

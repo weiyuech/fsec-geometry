@@ -1,0 +1,380 @@
+[
+  {
+    "job": "g9_kway_contrastive",
+    "has_done_marker": true,
+    "anchors": 30,
+    "summary": {
+      "2": {
+        "planned": 24,
+        "files": 24,
+        "distinct_sets": 24,
+        "crossed": 24,
+        "overlap_caps": [
+          0.1
+        ],
+        "direction_slots": {
+          "code": 8,
+          "sem": 26,
+          "lang": 14
+        },
+        "radius": [
+          1.0342503856812975,
+          1.019738268840161,
+          1.0389908953714004
+        ],
+        "implied_p": [
+          2.215258903247624,
+          2.1195372836194286,
+          2.2481155779594477
+        ],
+        "midpoint_median_radius": 1.0272191817825154,
+        "lp_prediction_from_k2": 1.0342503856812975,
+        "quadratic_prediction_from_k2": 1.0342503856812975
+      },
+      "3": {
+        "planned": 24,
+        "files": 24,
+        "distinct_sets": 24,
+        "crossed": 24,
+        "overlap_caps": [
+          0.1
+        ],
+        "direction_slots": {
+          "sem": 49,
+          "code": 13,
+          "lang": 10
+        },
+        "radius": [
+          1.057420536745164,
+          1.031162421213615,
+          1.102864416720501
+        ],
+        "implied_p": [
+          2.226283554055214,
+          2.118340074972016,
+          2.4338140121436522
+        ],
+        "midpoint_median_radius": 1.051396562700532,
+        "lp_prediction_from_k2": 1.054826841820348,
+        "quadratic_prediction_from_k2": 1.0722796889493156
+      },
+      "4": {
+        "planned": 24,
+        "files": 24,
+        "distinct_sets": 24,
+        "crossed": 24,
+        "overlap_caps": [
+          0.1
+        ],
+        "direction_slots": {
+          "lang": 17,
+          "sem": 72,
+          "code": 7
+        },
+        "radius": [
+          1.078585524621763,
+          1.0561553625975,
+          1.100922104114689
+        ],
+        "implied_p": [
+          2.2450231188033167,
+          2.1711332228517533,
+          2.3221047035727307
+        ],
+        "midpoint_median_radius": 1.076965939087346,
+        "lp_prediction_from_k2": 1.0696738602819125,
+        "quadratic_prediction_from_k2": 1.1148381703176098
+      },
+      "6": {
+        "planned": 24,
+        "files": 24,
+        "distinct_sets": 24,
+        "crossed": 24,
+        "overlap_caps": [
+          0.1
+        ],
+        "direction_slots": {
+          "sem": 120,
+          "code": 15,
+          "lang": 9
+        },
+        "radius": [
+          1.0346076034962186,
+          1.0245357804135293,
+          1.0651813595859112
+        ],
+        "implied_p": [
+          2.0789509344727666,
+          2.0556183962590455,
+          2.1516571326831175
+        ],
+        "midpoint_median_radius": 1.031928531768616,
+        "lp_prediction_from_k2": 1.0909550679796798,
+        "quadratic_prediction_from_k2": 1.217773034120448
+      },
+      "8": {
+        "planned": 24,
+        "files": 24,
+        "distinct_sets": 24,
+        "crossed": 24,
+        "overlap_caps": [
+          0.1
+        ],
+        "direction_slots": {
+          "sem": 168,
+          "code": 14,
+          "lang": 10
+        },
+        "radius": [
+          1.0392427136308904,
+          1.0272972782135992,
+          1.0529029894528648
+        ],
+        "implied_p": [
+          2.076890117697174,
+          2.0531825298991224,
+          2.1043365379713266
+        ],
+        "midpoint_median_radius": 1.0361386042016418,
+        "lp_prediction_from_k2": 1.1063106025497704,
+        "quadratic_prediction_from_k2": 1.3557521556723848
+      },
+      "12": {
+        "planned": 24,
+        "files": 24,
+        "distinct_sets": 24,
+        "crossed": 24,
+        "overlap_caps": [
+          0.2
+        ],
+        "direction_slots": {
+          "sem": 262,
+          "lang": 21,
+          "code": 5
+        },
+        "radius": [
+          1.0573623200012379,
+          1.0520186950416357,
+          1.0615184706221066
+        ],
+        "implied_p": [
+          2.0940061727582973,
+          2.0851037664126855,
+          2.100951604297689
+        ],
+        "midpoint_median_radius": 1.050749283734039,
+        "lp_prediction_from_k2": 1.12832069981895,
+        "quadratic_prediction_from_k2": 1.8780931373813967
+      },
+      "16": {
+        "planned": 24,
+        "files": 24,
+        "distinct_sets": 24,
+        "crossed": 24,
+        "overlap_caps": [
+          0.5
+        ],
+        "direction_slots": {
+          "sem": 312,
+          "lang": 48,
+          "code": 24
+        },
+        "radius": [
+          1.0565643719501336,
+          1.0538097231678474,
+          1.06172174857008
+        ],
+        "implied_p": [
+          2.0826615309296987,
+          2.078585493494003,
+          2.090307252004898
+        ],
+        "midpoint_median_radius": 1.0549203293370726,
+        "lp_prediction_from_k2": 1.1442021673704086,
+        "quadratic_prediction_from_k2": 6.598707171015543
+      }
+    }
+  },
+  {
+    "job": "g9_kway_randdiff",
+    "has_done_marker": true,
+    "anchors": 30,
+    "summary": {
+      "2": {
+        "planned": 24,
+        "files": 24,
+        "distinct_sets": 24,
+        "crossed": 24,
+        "overlap_caps": [
+          0.1
+        ],
+        "direction_slots": {
+          "ctrl": 48
+        },
+        "radius": [
+          0.9966220238165311,
+          0.9820703558485694,
+          1.008535864030597
+        ],
+        "implied_p": [
+          1.9806622432284418,
+          1.9007731359926059,
+          2.0502827237459846
+        ],
+        "midpoint_median_radius": 0.994937315990251,
+        "lp_prediction_from_k2": 0.9966220238165311,
+        "quadratic_prediction_from_k2": 0.9966220238165311
+      },
+      "3": {
+        "planned": 24,
+        "files": 24,
+        "distinct_sets": 24,
+        "crossed": 24,
+        "overlap_caps": [
+          0.1
+        ],
+        "direction_slots": {
+          "ctrl": 72
+        },
+        "radius": [
+          1.0037102626564312,
+          0.9865095968838482,
+          1.0096558991328262
+        ],
+        "implied_p": [
+          2.0135754324015873,
+          1.951740962920897,
+          2.0356110432822723
+        ],
+        "midpoint_median_radius": 0.9966669554513503,
+        "lp_prediction_from_k2": 0.994651326585461,
+        "quadratic_prediction_from_k2": 0.9932780501472152
+      },
+      "4": {
+        "planned": 24,
+        "files": 24,
+        "distinct_sets": 24,
+        "crossed": 24,
+        "overlap_caps": [
+          0.1
+        ],
+        "direction_slots": {
+          "ctrl": 96
+        },
+        "radius": [
+          1.0035696812996062,
+          0.9823212740171684,
+          1.01819856913023
+        ],
+        "implied_p": [
+          2.0103347115250494,
+          1.9498248620607952,
+          2.053428027422468
+        ],
+        "midpoint_median_radius": 0.9937488228002865,
+        "lp_prediction_from_k2": 0.9932554583561582,
+        "quadratic_prediction_from_k2": 0.9899675123479448
+      },
+      "6": {
+        "planned": 24,
+        "files": 24,
+        "distinct_sets": 24,
+        "crossed": 24,
+        "overlap_caps": [
+          0.1
+        ],
+        "direction_slots": {
+          "ctrl": 144
+        },
+        "radius": [
+          0.999024825496003,
+          0.973691716176283,
+          1.0243119396379188
+        ],
+        "implied_p": [
+          1.9978242862507944,
+          1.9422018975639301,
+          2.0551032198761323
+        ],
+        "midpoint_median_radius": 0.9971061430937302,
+        "lp_prediction_from_k2": 0.9912914180933996,
+        "quadratic_prediction_from_k2": 0.9834445430577319
+      },
+      "8": {
+        "planned": 24,
+        "files": 24,
+        "distinct_sets": 24,
+        "crossed": 24,
+        "overlap_caps": [
+          0.1
+        ],
+        "direction_slots": {
+          "ctrl": 192
+        },
+        "radius": [
+          1.0050446162449282,
+          0.9854159955527381,
+          1.0275954203900894
+        ],
+        "implied_p": [
+          2.009726469686206,
+          1.9721334845864722,
+          2.0537709630354954
+        ],
+        "midpoint_median_radius": 1.0039242764695648,
+        "lp_prediction_from_k2": 0.9899002650737306,
+        "quadratic_prediction_from_k2": 0.9770488385461807
+      },
+      "12": {
+        "planned": 24,
+        "files": 24,
+        "distinct_sets": 24,
+        "crossed": 24,
+        "overlap_caps": [
+          0.1
+        ],
+        "direction_slots": {
+          "ctrl": 288
+        },
+        "radius": [
+          1.0085488625258376,
+          0.995348472177059,
+          1.0207525042801349
+        ],
+        "implied_p": [
+          2.0137973036540013,
+          1.9925229394094433,
+          2.033619579927343
+        ],
+        "midpoint_median_radius": 1.0063331157958855,
+        "lp_prediction_from_k2": 0.9879428592922029,
+        "quadratic_prediction_from_k2": 0.9646230644265614
+      },
+      "16": {
+        "planned": 24,
+        "files": 24,
+        "distinct_sets": 24,
+        "crossed": 24,
+        "overlap_caps": [
+          0.1
+        ],
+        "direction_slots": {
+          "ctrl": 384
+        },
+        "radius": [
+          0.9915146338232594,
+          0.9765392786894738,
+          1.002148893169999
+        ],
+        "implied_p": [
+          1.9877810804241114,
+          1.9663266356726534,
+          2.0031016740300362
+        ],
+        "midpoint_median_radius": 0.9884498335303828,
+        "lp_prediction_from_k2": 0.986556405554302,
+        "quadratic_prediction_from_k2": 0.9526596231556846
+      }
+    }
+  }
+]
